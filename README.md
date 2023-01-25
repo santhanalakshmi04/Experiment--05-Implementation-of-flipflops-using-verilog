@@ -105,6 +105,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: SANTHANA LAKSHMI.K RegisterNumber: 22003398
 
 USING SR FLIPFLOP
+
 module sr_(s,r,clk,q,qbar);
 input s,r,clk;
 output q,qbar;
@@ -122,6 +123,7 @@ endmodule
 ![d2](https://user-images.githubusercontent.com/119475762/214619419-84a68352-1023-456f-89f8-d151e8a929ec.png)
 
 USING JK FLIPFLOP
+
 module jk(q,qbar,k,j,clk);
 input j,k,clk;
 output q,qbar;
@@ -139,6 +141,7 @@ TIMING DIGRAMS FOR FLIP FLOPS
 ![d4](https://user-images.githubusercontent.com/119475762/214620525-2dbabc3b-f626-4dd5-ab69-a54a67bae353.png)
 
 USING D FLIPFLOP
+
 module d(q,qbar,d1,clk);
 input d1,clk;
 output q,qbar;
@@ -170,10 +173,12 @@ nand(qbar,n2,q);
 endmodule
 
 RTL LOGIC FOR FLIPFLOPS
+
 ![d7](https://user-images.githubusercontent.com/119475762/214621259-b9ce52dc-87ef-4953-9d22-e7d103389d3f.png)
 
-TIMING DIGRAMS FO![d8](https://user-images.githubusercontent.com/119475762/214621400-90e0bf1e-663b-4ce4-a203-fff81fe87d54.png)
-R FLIP FLOPS
+TIMING DIGRAMS
+FO![d8](https://user-images.githubusercontent.com/119475762/214621400-90e0bf1e-663b-4ce4-a203-fff81fe87d54.png)
+
 
 ### RESULTS 
 Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully
