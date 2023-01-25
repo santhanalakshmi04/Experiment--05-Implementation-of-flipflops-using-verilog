@@ -106,15 +106,15 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 USING SR FLIPFLOP
 
-module sr_(s,r,clk,q,qbar);
-input s,r,clk;
-output q,qbar;
-wire x,y;
-nand(x,s,clk);
-nand(y,r,clk);
-nand(q,x,qbar);
-nand(qbar,y,q);
-endmodule
+    module sr_(s,r,clk,q,qbar);
+    input s,r,clk;
+    output q,qbar;
+    wire x,y;
+    nand(x,s,clk);
+    nand(y,r,clk);
+    nand(q,x,qbar);
+    nand(qbar,y,q);
+    endmodule
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
@@ -126,15 +126,15 @@ endmodule
 
 USING JK FLIPFLOP
 
-module jk(q,qbar,k,j,clk);
-input j,k,clk;
-output q,qbar;
-wire x,y;
-nand(x,j,clk,qbar);
-nand(y,k,clk,q);
-nand(q,x,qbar,qbar);
-nand(qbar,y,q);
-endmodule
+    module jk(q,qbar,k,j,clk);
+    input j,k,clk;
+    output q,qbar;
+    wire x,y;
+    nand(x,j,clk,qbar);
+    nand(y,k,clk,q);
+    nand(q,x,qbar,qbar);
+    nand(qbar,y,q);
+    endmodule
 
 RTL LOGIC FOR FLIPFLOPS
 
@@ -146,17 +146,17 @@ TIMING DIGRAMS FOR FLIP FLOPS
 
 USING D FLIPFLOP
 
-module d(q,qbar,d1,clk);
-input d1,clk;
-output q,qbar;
-wire n1;
-wire n2;
-not(x,d1);
-nand(n1,clk,d1);
-nand(n2,clk,x);
-nand(q,n2,qbar);
-nand(qbar,n1,q);
-endmodule
+    module d(q,qbar,d1,clk);
+    input d1,clk;
+    output q,qbar;
+    wire n1;
+    wire n2;
+    not(x,d1);
+    nand(n1,clk,d1);
+    nand(n2,clk,x);
+    nand(q,n2,qbar);
+    nand(qbar,n1,q);
+    endmodule
 
 RTL LOGIC FOR FLIPFLOPS
 
@@ -168,15 +168,15 @@ TIMING DIGRAMS FOR FLIP FLOPS
 
 USING T FLIPFLOP
 
-module hs(t,qbar,q,clk);
-input t,clk;
-output q,qbar;
-wire n1,n2;
-nand(n1,t,clk,qbar);
-nand(n2,clk,t,q);
-nand(q,n1,qbar);
-nand(qbar,n2,q);
-endmodule
+    module hs(t,qbar,q,clk);
+    input t,clk;
+    output q,qbar;
+    wire n1,n2;
+    nand(n1,t,clk,qbar);
+    nand(n2,clk,t,q);
+    nand(q,n1,qbar);
+    nand(qbar,n2,q);
+    endmodule
 
 RTL LOGIC FOR FLIPFLOPS
 
